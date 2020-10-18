@@ -29,11 +29,7 @@ function fish_prompt --description 'Write out the prompt'
 			set -g __fish_prompt_cwd (set_color $fish_color_cwd)
 		end
 
-		if test "$status" = "0"
-			set_color 777
-		else
-			set_color 8B0000
-		end
+		set_color 777
 		echo -n -s "[" (jobs | wc -l) "] "
 		set_color 9F9
 		# echo -n -s "$USER" " "
