@@ -1,5 +1,5 @@
 function select_history
-  history|peco|read foo
+  history|fzf|read foo
   if [ $foo ]
     commandline $foo
   else
