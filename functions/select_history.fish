@@ -1,5 +1,5 @@
 function select_history
-  history|fzf|read foo
+  history | fzf --no-sort | read foo
   if [ $foo ]
     commandline $foo
   else
