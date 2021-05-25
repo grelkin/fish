@@ -39,7 +39,13 @@ function fish_prompt --description 'Write out the prompt'
 			set jobs '⚙'
 		end
 		set_color 777
-		echo -n -s "[$code$jobs] "
+		echo -n -s "["
+		set_color f74a3d
+		echo -n -s "$code"
+		set_color f3f939
+		echo -n -s "$jobs"
+		set_color 777
+		echo -n -s "] "
 		set_color 9F9
 		# echo -n -s "$USER" " "
 		echo -n -s (date "+%H:%M") " "
