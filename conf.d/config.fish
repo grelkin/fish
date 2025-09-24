@@ -9,6 +9,9 @@ alias vf='vifm'
 alias vi='nvim'
 alias mk='make'
 
+# completions
 if command -v toolz > /dev/null
   status is-interactive; and source (toolz init fish | psub)
 end
+
+complete -F tig
